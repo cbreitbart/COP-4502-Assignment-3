@@ -83,7 +83,7 @@ public class problem1a3 {
         }
 
         long end = System.currentTimeMillis();
-        System.out.println("Finished in " + (end - start)/1000 + " seconds");
+        System.out.println("Runtime: " + (end - start)/1000 + " seconds");
     }
 
     public static void main(String[] args) {
