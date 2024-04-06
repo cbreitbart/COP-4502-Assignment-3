@@ -21,5 +21,6 @@ The program works by having an unordered set originally. The gift bag has enough
 Problem 2:
 
 The efficiency of this program takes around 220 milliseconds to run on average for the period of 48 hours that I have for testing. This is subject to change based on the number of hours set.
+
 The code utilizes an ExecutorService to manage eight threads (THREAD_COUNT) that each simulate temperature readings over a period of time. (I have 2 days or 48 hours just for testing as a set period was not stated in the prompt). Each thread updates a shared list of sensor readings (sensorReadings) at one-minute intervals (MINUTES). The readings are synchronized to ensure thread safety. The code also checks that all sensors are ready before proceeding to the next minute's reading. A lock (ReentrantLock) is used to generate hourly reports in a thread-safe manner, summarizing the temperature data collected. These reports include the largest temperature difference over a ten-minute interval, as well as the highest and lowest temperatures recorded during the hour.
 
