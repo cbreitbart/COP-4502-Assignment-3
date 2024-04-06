@@ -2,8 +2,8 @@
 
 To compile from the command line, type the following:
 
-javac problem1a3.java then,
-
+javac problem1a3.java 
+and
 javac ConcurrentLinkedList.java (for problem 1)
 
 
