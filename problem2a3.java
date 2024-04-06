@@ -7,7 +7,7 @@ public class problem2a3 {
 
     private static final int THREAD_COUNT = 8;
     private static final int MINUTES = 60;
-    private static final int HOURS = 72;
+    private static final int HOURS = 48;
     private final Lock lock = new ReentrantLock();
     private List<Integer> sensorReadings;
     private List<Boolean> sensorsReady = Collections.synchronizedList(new ArrayList<>(THREAD_COUNT));
